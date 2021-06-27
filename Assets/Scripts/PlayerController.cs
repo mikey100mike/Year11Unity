@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
 	public CharacterController controller;
-    public float speed = 8f;
-    public float gravity = -30f;
+    public float speed = 10f;
+    public float gravity = -50f;
     public float jumpHeight = 3f;
     public float jumpCount = 0f;
     Vector3 velocity;

@@ -18,13 +18,14 @@ public class PowerUp : MonoBehaviour
         }
         else if (other.gameObject.tag == "Slow Down")
         {
-            controller.speed = 8f;
+            controller.speed = 10f;
         }
 
         // Mini Power Up
         if (other.gameObject.tag == "MiniPowerUp")
         {
             // Change scale of player controller
+            // Source: https://docs.unity3d.com/ScriptReference/Transform-localScale.html
             transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
             controller.jumpHeight = 0.5f;
             controller.gravity = -10f;
